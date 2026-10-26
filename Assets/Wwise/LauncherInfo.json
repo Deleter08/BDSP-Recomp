@@ -1,0 +1,24 @@
+{
+    "originalSdkFolder": "F:\\Wwise2019\\Wwise_2019.2.5.7349\\SDK",
+    "currentVersion": {
+        "nickname": "",
+        "build": 1831,
+        "major": 2,
+        "minor": 5,
+        "year": 2019
+    },
+    "installedBundleGroups": [
+        {
+            "id": "Packages",
+            "valueId": "Unity"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        }
+    ]
+}

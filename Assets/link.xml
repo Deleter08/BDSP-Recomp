@@ -1,0 +1,17 @@
+<linker>
+  <!-- BDSP PC rebuild, IL2CPP Windows player (HANDOFF "s38b"). NOT shipped. IL2CPP always strips managed code (Low at least), and
+       this game reaches much of its code without a static reference the linker could see:
+       - StartupSettings._initializeMethods / _sceneRestoreOperationMethods / _sceneBeforeActivateOperationMethods are invoked BY NAME
+         (SerializedMethod -> Type.GetType + reflection);
+       - Dpr.bin is read with BinaryFormatter through IgnoreVersionBinder (Type.GetType, fields set by reflection);
+       - the 13,651 AssetBundles hold MonoBehaviours / ScriptableObjects of these assemblies that no scene of the player build
+         references (the player contains level0 only).
+       Keep the game and the package / plugin assemblies whole. Engine classes used only by bundles are handled by the build
+       (BuildPlayerOptions.assetBundleManifestPath, engine code stripping off) in Assets/Editor/BdspWinBuild/BdspWinBuild.cs. -->
+  <assembly fullname="Assembly-CSharp" preserve="all"/>
+  <assembly fullname="Assembly-CSharp-firstpass" preserve="all"/>
+  <assembly fullname="Unity.TextMeshPro" preserve="all"/>
+  <assembly fullname="Unity.Timeline" preserve="all"/>
+  <assembly fullname="UnityEngine.UI" preserve="all"/>
+  <assembly fullname="DOTween" preserve="all"/>
+</linker>

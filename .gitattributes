@@ -1,0 +1,4 @@
+# Every checkout gets the files byte for byte as stored - no line-ending conversion, whatever core.autocrlf says (GitHub's
+# "Download ZIP" gives the same bytes). The setup and Unity were tested on exactly these bytes.
+* -text
+*.cs text eol=lf

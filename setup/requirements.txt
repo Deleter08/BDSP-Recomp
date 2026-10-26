@@ -1,0 +1,6 @@
+# Python packages the setup stages use (pinned to the versions the reference setup ran with). setup.cmd installs them
+# into its own portable Python; by hand: python -m pip install -r setup/requirements.txt
+UnityPy==1.25.4
+numpy==2.5.1
+pillow==12.3.0
+texture2ddecoder==1.0.6

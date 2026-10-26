@@ -1,0 +1,122 @@
+# uDPR
+# Unity-generated
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.unityproj
+*.tmp
+.vs/
+.vscode/
+.idea/
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+
+# The game's assets are exported from the user's own dump (setup.cmd) and never committed.
+# Committed under Assets/: Scripts, Editor, Plugins (DOTween vendor), the Wwise .meta files + Wwise settings assets (see
+# below), link.xml, StreamingAssets/AK (Wwise marker) and the folder metas of these.
+/Assets/*
+!/Assets/Scripts/
+!/Assets/Scripts.meta
+!/Assets/Editor/
+!/Assets/Editor.meta
+!/Assets/Plugins/
+!/Assets/Plugins.meta
+!/Assets/Wwise/
+!/Assets/Wwise.meta
+!/Assets/WwiseSettings.xml
+!/Assets/WwiseSettings.xml.meta
+!/Assets/link.xml
+!/Assets/link.xml.meta
+!/Assets/StreamingAssets/
+!/Assets/StreamingAssets.meta
+# this project's own (original) assets - see Assets/_Ours/README.md
+!/Assets/_Ours/
+!/Assets/_Ours.meta
+/Assets/StreamingAssets/*
+!/Assets/StreamingAssets/AK/
+!/Assets/StreamingAssets/AK.meta
+
+# Wwise Unity Integration 2019.2.5.1831 is NOT shipped (author, 2026-10-15): each player installs it through the Audiokinetic
+# Launcher and the setup copies its files in (+ AkInitializer.LateUpdate / AkGameObj.SetPosition made public, as in the
+# shipped game). Kept here: our .meta files (the GUIDs the game's assets reference), the project's Wwise settings assets and
+# the Launcher's version record.
+/Assets/Wwise/**
+!/Assets/Wwise/**/
+!/Assets/Wwise/**/*.meta
+!/Assets/Wwise/ScriptableObjects/*.asset
+!/Assets/Wwise/LauncherInfo.json
+/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+
+# Automated setup: intermediate files and tools (setup/setup.py --work defaults here)
+/SetupWork/
+__pycache__/
+
+.DS_Store
+**/.DS_Store
+# app-icon textures derived from Assets/_Ours/Icon/boxart_1024.png at build time (BdspWinBuild.Icons.cs)
+/Assets/_Ours/Icon/Generated/
+/Assets/_Ours/Icon/Generated.meta
+
+# Local release scratch, duplicate staged code and user-supplied artwork (never publish).
+/.utmp/
+/handoff/icon/
+/handoff/ios-fix-staged/
+/handoff/ios-render-staged/
+/handoff/android-legacy-wwise-stub/
+/Assets/_Ours/Icon/
+/Assets/_Ours/Icon.meta
+/setup/assets/ios_icon.jpg
+/docs/screenshots/
+
+# Private inputs, signing material and packaged games, wherever generated.
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.ulf
+prod.keys
+title.keys
+*.bnk
+*.wem
+Dpr.bin
+SaveData.bin
+Backup.bin
+*.ipa
+*.apk
+*.aab
+
+# DOTween binaries and artwork are installed from the user's own copy.
+/Assets/Plugins/DOTween/DOTween.dll
+/Assets/Plugins/DOTween/Editor/DOTweenEditor.dll
+/Assets/Plugins/DOTween/Editor/Imgs/DOTweenIcon.png
+/Assets/Plugins/DOTween/Editor/Imgs/Footer.png
+/Assets/Plugins/DOTween/Editor/Imgs/Footer_dark.png
+/Assets/Plugins/DOTween/Editor/Imgs/Header.jpg
+
+# User dumps and build packages outside the standard output directories.
+/romfs/
+/exefs/
+/dump/
+/dumps/
+*.nsp
+*.xci
+*.nca
+*.app/
+*.xcarchive/

@@ -1,0 +1,16 @@
+PREFAB MISSING 1 Assets/bg/underground/UGspace06.prefab
+PREFAB MISSING 1 Assets/bg/underground/UGspace30.prefab
+PREFAB MISSING 1 Assets/bg/underground/UGspace51.prefab
+PREFAB MISSING 1 Assets/bg/underground/UGspace55.prefab
+PREFAB MISSING 1 Assets/bg/underground/UGspaceL06.prefab
+PREFAB MISSING 1 Assets/environment/user/tanaka/undergroundbackup/underground/UGspace06.prefab
+PREFAB MISSING 1 Assets/environment/user/tanaka/undergroundbackup/underground/UGspaceL06.prefab
+PREFAB MISSING 1 Assets/GameObject/MonitorCanvas.prefab
+SCENE MISSING 1 Assets/SharedAssets/Games/Scenes/_Old/EvolveDemo.unity
+SCENE MISSING 1 Assets/SharedAssets/Games/Scenes/_Old/HatchDemo.unity
+SO MISSING SCRIPT Assets/scriptableobjects/TestGMSTradeParam.asset (type null)
+SO MISSING SCRIPT Assets/MonoBehaviour/Switch.asset (type null)
+SO MISSING SCRIPT Assets/scriptableobjects/GMSConfig.asset (type null)
+SO MISSING SCRIPT Assets/scriptableobjects/GMSCameraConfig.asset (type null)
+PINK Assets/Material/ScoreGaugeMat.mat
+TOTAL prefabs 7289 (with missing scripts 8), scenes 11 (2), ScriptableObjects missing script 4, pink materials 1
